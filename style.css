@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .navbar-nav {
+    margin-left: 9%;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px;
+  }
+  .navbar-nav .nav-link:hover{
+    color: green;
+  }
+  
+  .herosection {
+    background-image: url(./asets/bg.jpg);
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .herosection::before {
+    content: '';
+    background: linear-gradient(to left, rgba(91, 150, 63, 0.9), rgba(78, 52, 175, 0.9));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .herotext {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Ensure text is visible on the background */
+    width: 70%; /* Adjust width as needed */
+  }
+  #playbtn{
+font-size: 80px;
+color: rgb(79, 168, 79);
+  }
+  .mid-part{
+    display: flex;
+    flex-direction: right;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .bottom-part{
+    display: flex;
+    
+    margin-top: 150px;
+    margin-left: 30px;
+    
+  }
+  .content{
+    width: 45%;
+    
+  }
+  .botton-img{
+    width: 50%;
+    margin-left: 130px;
+  }
+
+  .bullets{
+    list-style-type: none;
+  }
+  .bullets li:before{
+    content: "\2022";
+    color: green;
+    display: inline-block;
+    width: 1em;
+    size: 2em;
+    font-size: 1.5em;
+    margin-left: 1em;
+  }
